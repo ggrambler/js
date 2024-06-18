@@ -1,0 +1,322 @@
+1)basic intro to js
+
+respond to user actions
+
+html // structure
+css // style to structure
+js // make it function
+
+basic html tags
+simple css -> classes and ids
+size units px, em etc
+
+why u should mention script link at bottom of html file 
+:-> because atleast html base should load even if the js fails.
+
+document.getElementById etc
+js variables
+number
+strings
+boolean
+
+arithmetic operators
+operands 
+operator precedents  bedmas
+type conversion
+escape sequences such \n work
+formatted output 
+
+how to accept user input :
+1. window prompt
+2. HTML textbox *imp
+
+Math class 
+eg Math.PI
+   Math.E
+   Math.abs(x)
+   Math.max(a,b,c)
+   Math.min(a,b,c)
+   Math.round(x)
+   Math.floor(x)
+   Math.ceil(x)
+   Math.trunc(x)
+   Math.pow(a,b) a**b
+   Math.sqrt(x)
+   Math.log(x) //ln base = e 
+   sin,cos,tan etc
+ternary operator : (cond)?trueDo:FalseDo;
+switch statement
+document.getElementById().value
+document.getElementById().textContent = 
+
+<input > tag types
+.checked for html checkboxes
+
+string methods
+logical opeartors
+&& *
+|| +
+! 1-x
+assignment = 
+comarision == 
+strict equality === // datatype should be same too
+!= inequality
+!== strict inequality
+
+looping
+    while
+    do while
+    for 
+
+isNaN();
+
+functions in JS
+variable scope
+    global
+    local
+
+Arrays **
+spread ...
+rest parameters ...rest
+
+
+---------------------------------------------------------------------------
+script notes:
+
+// // actions 
+// // commenting uses // or 
+// /*
+// This 
+// is 
+// a 
+// Multiline comment
+// */
+// //ways to provide output include " " , ' ' , or ` `
+// console.log("1");
+// console.log('2');
+// console.log(`3`);
+// //the third one is backticks : personal fav , called temperate literals and help in using variables
+
+// console.log("Hello");
+// console.log(`I love Pizza!!`);
+
+// // window.alert(`Thsi is an alert!!`);
+
+// document.getElementById("myh1").textContent = "hello";
+// document.getElementById('myp').textContent = "I like Pizza !";
+
+// //New topics : Variables
+
+// //1. declaration    let x
+// //2. assignment     x = 100;
+
+// let x;
+// x = 100;
+// let y = 123;
+
+// console.log(x,y);
+
+// let age = 25;
+// let price = 10.99;
+// let gpa = 4.0;
+// console.log(age,price,gpa);
+
+// console.log("You are ",age," years old.");
+// console.log(`You are ${age} years old`);
+// //although both give same answer botha re not the same
+
+// console.log(`You are ${age} years old and your gpa is ${gpa} . \n I can own you at $${price}`);
+
+// console.log(typeof(age));
+// console.log(typeof(gpa));
+// console.log(typeof(price));
+
+// let str = "I am Not brocode";
+// let ema = "bro@gmail.com";
+// console.log(str);
+// console.log(`I define : ${str}`);
+// console.log(typeof(str));
+// console.log(typeof(ema));
+
+// let online =  true;
+
+// console.log(typeof(online));
+
+// let fullname = "Ashish Hunger";
+// let age = 22;
+// let student = true;
+
+// // document.getElementById("p1").textContent = fullname;
+// // document.getElementById("p2").textContent = age;
+// // document.getElementById("p3").textContent = student;
+
+// document.getElementById("p1").textContent = `Your name is ${fullname}`;
+// document.getElementById("p2").textContent = age;
+// document.getElementById("p3").textContent = `are you a student ? : ${student}`;
+
+*)
+let x =100;
+let student  = 30;
+student += 1;
+student ++;
+student --;
+console.log(x);
+console.log(student);
+
+student *= 2;
+student -= 1;
+
+console.log(student);
+
+student = 2;
+student =  student**2;
+student **=3;
+console.log(student);
+student = 2;
+student = student**2**3;// student ** 8
+
+console.log(student);
+
+student %= 3;
+console.log(student);
+
+student *= 8;
+console.log(student);
+
+student /= 2;
+console.log(student);
+
+let username ;
+
+// username = window.prompt("Username?");
+
+document.getElementById("sub").onclick = 
+    function()
+    {
+        username = document.getElementById("uname").value;
+        console.log(username);
+        console.log(`Hello ${username}`);
+    }
+
+document.getElementById("myh1").onclick = function()
+{
+    console.log(`Empty why????`);
+}
+console.log(username);
+
+*)
+let x = "Pizza";
+let y = "Pizza";
+let z = "Pizza";
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x); //NaN
+console.log(y); //pizza
+console.log(z); //true
+
+// what is NaN ?  NaN -> not a Number
+
+let a = "0";
+let b = "";
+
+a = Boolean(a);
+b = Boolean(b);
+
+console.log(a , typeof(a));
+console.log(b, typeof(b));
+
+window.alert
+window.prompt
+
+*)
+
+let a ;
+document.getElementById("submit").onclick = function()
+{
+    a = Number(document.getElementById("val").value)
+    switch(a){
+        case 1:
+            console.log("1");
+            break;
+        case (2):
+            console.log(2);
+            break;
+        default:
+            console.log(3);
+            break;
+    
+    }
+}
+
+*)
+let username = "BroCode";
+console.log(username.charAt(0));
+console.log(username.length);
+console.log(username.replace('o','e'));
+console.log(username.lastIndexOf('o'));
+
+username.trim();
+username = username.concat(" is ugly");
+console.log(username);
+console.log(username.includes(" "));
+console.log(username.replaceAll(" ",""));
+
+*)
+let fruits = ["apple","banana","orange"];
+
+fruits.pop();
+fruits.push("coconut");
+fruits.unshift("mango");
+fruits.shift("mangg");
+
+let l = fruits.length;
+let index = fruits.indexOf("mango");
+
+fruits.sort();
+fruits.sort().fruits();
+
+for(let i=0;i<l;i++)console.log(fruits[i]);
+
+for(let i of fruits)console.log(i);
+
+
+*)
+// ... spread operator
+    // : allows an iterable sunch as an 
+    // array or string to be expanded into separate elements
+
+let num = [1,2,3,4,5];
+let maxx = Math.max( ... num);
+let minn = Math.min(... num);
+
+console.log(maxx);
+console.log(minn);
+
+.)
+
+function frd(...foods){
+    console.log(foods);
+}
+function getf(...f){
+    return f;
+}
+function sum(...a){
+    let res = 0;
+    for(let num of a){
+        res += num;
+    }
+    return res;
+}
+const f1 = "pizza";
+const f2 = "wet";
+const f3 = "kidd";
+const f4 = "roll";
+
+frd(f1,f2,f3,f4)
+const foods = getf(f1,f2,f3,f4);
+console.log(foods);
+
+console.log(sum(1,2,3));
