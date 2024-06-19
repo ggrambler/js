@@ -78,6 +78,33 @@ variable scope
 Arrays **
 spread ...
 rest parameters ...rest
+.filter()
+.reduce()
+.map()
+function declaration 
+function expression
+setTimeout(function_name//no brackets(), time in ms) 
+eg setTimeout(print, 3000);
+
+
+arrow functions
+const intro = (parameters) => { console.log(parameters)};
+objects
+methods = function of an object
+This
+this.name -> refers to name prop within the object
+*this does not work with arrow function
+const objname = {
+    key:value,
+    key:value,
+    key:value,
+    method: function(){
+        //code
+    }
+}
+
+constructors()  
+class 
 
 
 ---------------------------------------------------------------------------
