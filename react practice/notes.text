@@ -1,0 +1,12 @@
+react :
+
+a js library , not framework 
+library vs framework
+components -> reusable js code
+
+uses jsx 
+write html like code in js file
+
+uses virtual dom
+
+node js + npm 

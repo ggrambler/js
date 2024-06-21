@@ -106,6 +106,16 @@ const objname = {
 constructors()  
 class 
 
+static -> keyword that defines properties or methods of a class 
+    itself rather than the objects created from it .
+    class owns anything static , not object
+inheritance : class child extends parent
+    parent -> child relationship
+
+till 42 ^
+// skipped 42 to 52 <boring + not needed>
+after 
+
 
 ---------------------------------------------------------------------------
 script notes:
