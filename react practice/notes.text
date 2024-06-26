@@ -1,12 +1,9 @@
-react :
+npm create vite@latest
 
-a js library , not framework 
-library vs framework
-components -> reusable js code
+css styling for components
+EXTERNAL
+MODULE
+INLINE
 
-uses jsx 
-write html like code in js file
-
-uses virtual dom
-
-node js + npm 
+no tailwind css
+and no preprocessors
